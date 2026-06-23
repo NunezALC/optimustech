@@ -12,7 +12,7 @@ Você pode visualizar o projeto online clicando no link abaixo:
 ## 📷 Screenshots do Projeto
 
 <div align="center">
-  <img src="assets/images/talentos.png" alt="Preview da Seção de Talentos" width="800px">
+  <img src="assets/images/tela.png" alt="Preview da Seção de Talentos" width="800px">
 </div>
 
 ---
