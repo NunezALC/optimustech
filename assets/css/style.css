@@ -1,4 +1,6 @@
-/* 1. DECLARAÇÃO DAS VARIÁVEIS NO TOPO DO ARQUIVO */
+/* ==========================================================================
+   1. DECLARAÇÃO DAS VARIÁVEIS NO TOPO DO ARQUIVO
+   ========================================================================== */
 :root {
     --brand-color: #8E2424;       /* O vinho clássico do subtítulo e destaques */
     --brand-dark: #8b1a1a;        /* O vinho do botão cadastrar */
@@ -11,22 +13,22 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;       /* Garante que paddings não quebrem a largura no mobile */
 }
 
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-white);
+    overflow-x: hidden;           /* Evita qualquer rolagem horizontal indesejada */
 }
 
-/* ==========================================
+/* ==========================================================================
    DIA 1 & 2: NAVBAR PRINCIPAL (DESKTOP)
-   ========================================== */
+   ========================================================================== */
 .navbar {
     display: flex;
     justify-content: space-between; /* Isola a logo à esquerda e o bloco da direita */
     align-items: center;
-
     padding: 18px 80px;
     background-color: var(--bg-white);
     max-width: 1440px;
@@ -90,16 +92,15 @@ body {
     cursor: pointer;
 }
 
-/* ==========================================
+/* ==========================================================================
    DIA 2: SEÇÃO HERO
-   ========================================== */
+   ========================================================================== */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    padding: 64px 20px;
+    padding: 64px 24px;           /* Ajustado para 24px nas laterais para segurança mobile */
     background-color: var(--bg-white);
 }
 
@@ -132,16 +133,15 @@ body {
     margin-right: auto; 
 }
 
-/* ==========================================
+/* ==========================================================================
    DIA 3: CONTAINER PRINCIPAL DAS MÉTRICAS
-   ========================================== */
+   ========================================================================== */
 .metrics-container {
     display: flex;
     flex-wrap: wrap;                 
     justify-content: space-between;  
     align-items: flex-start;        
     gap: 2rem;                       
-    
     max-width: 1216px;              
     margin: 0 auto;                 
     padding: 64px 1.25rem;           
@@ -177,9 +177,9 @@ body {
     line-height: 24px;
 }
 
-/* ==========================================
+/* ==========================================================================
    DIA 4: SEÇÃO DE TALENTOS SIMPLIFICADA
-   ========================================== */
+   ========================================================================== */
 .talents {
     max-width: 1216px;              
     margin: 0 auto;                 
@@ -202,9 +202,9 @@ body {
     object-fit: cover;              
 }
 
-/* ==========================================
+/* ==========================================================================
    DIA 5: SEÇÃO DE VAGAS 
-   ========================================== */
+   ========================================================================== */
 .jobs-section {
     max-width: 1216px;              
     margin: 0 auto;                 
@@ -263,18 +263,20 @@ body {
     color: var(--text-muted);
     font-size: 0.875rem;            
 }
-/* ==========================================
-    DIA 6: SEÇÃO DE COMENTÁRIOS (TESTEMUNHOS)
-   ========================================== */
+
+/* ==========================================================================
+   DIA 6: SEÇÃO DE COMENTÁRIOS (TESTEMUNHOS)
+   ========================================================================== */
 .testimonials {
     width: 100%;
     max-width: 1216px;
     background-color: rgba(195, 25, 25, 0.03);
     border-radius: 16px;
-    padding: 64px 32px;
+    padding: 64px 24px;           /* Ajustado para proteção nas laterais mobile */
     margin: 0 auto 96px auto;
     text-align: center;
 }
+
 .testimonials-subtitle {
     font-size: 14px;
     font-weight: 600;
@@ -282,6 +284,7 @@ body {
     color: #8E2424;
     margin-bottom: 16px;
 }
+
 .testimonial-quote {
     font-size: 36px;
     font-weight: 500;
@@ -291,11 +294,13 @@ body {
     max-width: 1088px;
     margin: 0 auto 32px auto; 
 }
+
 .testimonial-author {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .testimonial-image {
     width: 56px;
     height: 56px;
@@ -303,6 +308,7 @@ body {
     object-fit: cover;
     margin-bottom: 16px;
 }
+
 .testimonial-name {
     font-size: 16px;
     font-weight: 600;
@@ -310,22 +316,29 @@ body {
     color: #101828;
     margin-bottom: 4px;
 }
+
 .testimonial-position {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #667085;
 }
+
+/* ==========================================================================
+   DIA 7: SEÇÃO NEWSLETTER & FORMULÁRIO (NOVO)
+   ========================================================================== */
 .newsletter {
-    background-color: #F9FAFB;
+    background-color: #F9FAFB;    /* Token Gray/50 do Figma */
     padding: 96px 0;
 }
+
 .newsletter-container {
     max-width: 832px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 24px;
+    padding: 0 24px;              /* Margem de segurança lateral para telas menores */
 }
+
 .newsletter-title {
     font-size: 36px;
     font-weight: 600;
@@ -333,6 +346,7 @@ body {
     color: #101828;
     margin-bottom: 16px;
 }
+
 .newsletter-text {
     font-size: 20px;
     font-weight: 400;
@@ -340,6 +354,7 @@ body {
     color: #667085;
     margin-bottom: 32px;
 }
+
 .newsletter-form {
     display: flex;
     justify-content: center;
@@ -347,8 +362,9 @@ body {
     max-width: 480px;
     margin: 0 auto;
 }
+
 .newsletter-form input {
-    flex: 1;
+    flex: 1;                      /* Faz o input ocupar o espaço dinâmico restante */
     padding: 12px 16px;
     border: 1px solid #D0D5DD;
     border-radius: 8px;
@@ -356,9 +372,10 @@ body {
     color: #101828;
     outline: none;
 }
+
 .btn-newsletter {
     padding: 12px 20px;
-    background-color: #8E2424;
+    background-color: var(--brand-color); /* Usa a variável vinho */
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -366,23 +383,30 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
+/* ==========================================================================
+   DIA 7: RODAPÉ SEMÂNTICO (NOVO)
+   ========================================================================== */
 .footer {
     max-width: 1216px;
     margin: 0 auto;
     padding: 48px 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Joga copyright para a esquerda e links para a direita */
     align-items: center;
     border-top: 1px solid #EAECF0;
 }
+
 .footer-copyright {
     font-size: 14px;
     color: #667085;
 }
+
 .footer-socials {
     display: flex;
     gap: 24px;
 }
+
 .footer-link {
     font-size: 14px;
     font-weight: 600;
@@ -391,17 +415,18 @@ body {
 }
 
 .footer-link:hover {
-    color: #8E2424;
+    color: var(--brand-color);    /* Feedback visual ao passar o mouse */
 }
-/* ==========================================
+
+/* ==========================================================================
    MÍDIA QUERY: RESPONSIVIDADE E MENU HAMBÚRGUER (MOBILE)
-   ========================================== */
+   ========================================================================== */
 @media (max-width: 768px) {
     .navbar {
         width: 100%;                 
         max-width: 100%;             
         padding: 20px 24px;          
-        position: relative;         /* Torna-se a base de posicionamento do dropdown */
+        position: relative;         /* Torna-se a base de lançamento do dropdown */
         box-sizing: border-box;
     }
 
@@ -431,7 +456,6 @@ body {
         display: none;              /* Esconde o menu por padrão no mobile */
         flex-direction: column;
         gap: 32px;
-        
         position: absolute;
         top: 100%;                  /* Abre exatamente abaixo do cabeçalho */
         left: 0;
@@ -485,5 +509,17 @@ body {
     }
     .menu-checkbox:checked ~ .hamburger-label span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Ajustes responsivos adicionais para as novas seções finais no Mobile */
+    .newsletter-form {
+        flex-direction: column;     /* Coloca o input em cima e botão embaixo no celular */
+        width: 100%;
+    }
+    
+    .footer {
+        flex-direction: column;     /* Quebra o copyright e redes em linhas verticais */
+        gap: 24px;
+        text-align: center;
     }
 }
