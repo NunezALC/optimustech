@@ -42,4 +42,4 @@ Durante os 7 dias de imersão, pude consolidar fundamentos essenciais para a min
 
 Desenvolvido por **Dorgivaldo Nunes de Alcântara** 👋 
 
-* LinkedIn: [Seu Nome Profissional] https://www.linkedin.com/in/dorgivaldo-nunes/
+* LinkedIn: https://www.linkedin.com/in/dorgivaldo-nunes/
