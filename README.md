@@ -5,7 +5,7 @@ Página institucional moderna e responsiva desenvolvida para a OptimusTech, foca
 ## 🔗 Demonstração
 
 Você pode visualizar o projeto online clicando no link abaixo:
-👉 [Acesse a OptimusTech rodando ao vivo] https://optimustech-orpin-seven.vercel.app/
+👉 https://optimustech-orpin-seven.vercel.app/
 
 ---
 
